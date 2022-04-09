@@ -6,12 +6,19 @@ a {
     text-decoration: none;
 }
 
+.header {
+    position: fixed;
+    width: 100%;
+}
 .container {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top:auto;
+    margin-bottom: auto;
     padding-right: 20px;
     padding-left: 20px;
+    text-align: center;
 }
 
 .header-container {
@@ -20,6 +27,12 @@ a {
     height: 100%;
     background-color: hsl(28deg 15% 17%);
   }
+
+  @media (max-width: 700px) {
+    .header-container {
+        display: block;
+    }
+}
 
 .home, .nav-link {
     color: white;
@@ -36,7 +49,7 @@ h3 {
 }
 
 img {
-    height: 550px;
+    height: 500px;
     margin: 30px;
 }
 
@@ -59,14 +72,6 @@ display: flex;
     font-size: 30px;
 }
 
-main {
-    display: flex;
-}
-
-.name {
-    margin-top: 150px;
-}
-
 h1 {
     font-size: 48px;
 }
@@ -75,5 +80,72 @@ h1 {
 
 .section-hero {
     display:flex;
-    width: 100%;
+    padding-top: 70px;
+}
+
+@media (max-width: 700px) {
+    .section-hero {
+        display: block;
+    }
+}
+
+.section-info {
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .section-info {
+        display: block;
+    }
+}
+
+.section-intro {
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .section-intro {
+        display: block;
+    }
+}
+
+.intro, .info {
+    font-size: 30px;
+}
+
+/* fotter */
+
+.footer-container {
+    display: flex;
+    background-color: hsl(28deg 15% 17%);
+    padding: 10px;
+  }
+  
+  @media (max-width: 700px) {
+    .footer-container {
+        display: block;
+    }
+}
+
+.footer-list {
+    display: flex;
+    margin-left: auto;
+}
+    
+.footer-item {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
+}
+
+    .footer-link {
+        color: white;
+}
+
+.welcome {
+    color: white;
+    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
